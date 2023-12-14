@@ -1,26 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pixel Perfect Pairing - Ultimate Game Matcher</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-
-    .box {
-      margin-bottom: 15px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 5px;
-    }
-  </style>
-</head>
-<body>
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -36,124 +13,135 @@
           background-repeat: no-repeat;
         }
     
-        .box {
-          margin-bottom: 15px;
-          background-color: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent white background for better readability */
-          padding: 15px;
-          border-radius: 10px;
-        }
-    
         label {
           display: block;
           margin-bottom: 5px;
         }
+        .questions .box {
+          /* Set the left margin to 0 to move the boxes to the left */
+          margin-left: 0;
+          
+          /* Optionally, you can set other properties to adjust the positioning */
+          /* For example, you might want to set padding or width */
+          padding: 10px;
+          width: 50%;
+      }
+      .box {
+        margin-bottom: 15px;
+        background-color: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent white background for better readability */
+        padding: 15px;
+        border-radius: 10px;
+        display: inline-block; /* or block, depending on your layout requirements */
+        max-width: 100%; /* ensures the box doesn't exceed the width of its container */
+        word-wrap: break-word; /* allows long words to break and wrap onto the next line */
+      }
       </style>
     </head>
     <body>
     
-      <h1>Pixel Perfect Pairing</h1>
-      <h2>Ultimate Game Matcher</h2>
-    
-      <!-- First Section -->
-      <div class="box">
-    <h3>Its snowing outside and find yourself in a snowball fight?</h3>
-    <form>
-      <label>
-        <input type="radio" name="console" value="Nintendo"> Nintendo - Hide in the corner.
-      </label>
-      <label>
-        <input type="radio" name="console" value="Xbox"> Xbox - Go crazy on the attacher.
-      </label>
-      <label>
-        <input type="radio" name="console" value="PlayStation"> PlayStation - Cry.
-      </label>
-      <label>
-        <input type="radio" name="console" value="Mobile"> Mobile - Run.
-      </label>
-      <label>
-        <input type="radio" name="console" value="PC"> PC - Sit down and attack.
-      </label>
-    </form>
-  </div>
+      <h1>Pixel Perfect Pairing - The Ultimate Game Matcher</h1>
+      <div class="questions">
+        <!-- First Section -->
+        <div class="box">
+      <h3>Its snowing outside and find yourself in a snowball fight?</h3>
+      <form>
+        <label>
+          <input type="radio" name="console" value="Nintendo"> Nintendo - Hide in the corner.
+        </label>
+        <label>
+          <input type="radio" name="console" value="Xbox"> Xbox - Go crazy on the attacher.
+        </label>
+        <label>
+          <input type="radio" name="console" value="PlayStation"> PlayStation - Cry.
+        </label>
+        <label>
+          <input type="radio" name="console" value="Mobile"> Mobile - Run.
+        </label>
+        <label>
+          <input type="radio" name="console" value="PC"> PC - Sit down and attack.
+        </label>
+      </form>
+    </div>
 
-  <!-- Second Section -->
-  <div class="box">
-    <h3>Do you recruit help from friends or go at this alone?</h3>
-    <form>
-      <label>
-        <input type="radio" name="playerOptions" value="Single"> Single - Go at it alone.
-      </label>
-      <label>
-        <input type="radio" name="playerOptions" value="Multiplayer"> Multiplayer - Gather some buddies to start a war.
-      </label>
-    </form>
-  </div>
+    <!-- Second Section -->
+    <div class="box">
+      <h3>Do you recruit help from friends or go at this alone?</h3>
+      <form>
+        <label>
+          <input type="radio" name="playerOptions" value="Single"> Single - Go at it alone.
+        </label>
+        <label>
+          <input type="radio" name="playerOptions" value="Multiplayer"> Multiplayer - Gather some buddies to start a war.
+        </label>
+      </form>
+    </div>
 
-  <!-- Third Section -->
-  <div class="box">
-    <h3>Later you find yourself in a room full of presents. What's your first move?</h3>
-    <form>
-      <label>
-        <input type="radio" name="subGene" value="Game1"> Game 1 - Run around looking for the perfect gift.
-      </label>
-      <label>
-        <input type="radio" name="subGene" value="Game2"> Game 2 - Jump in and open everything.
-      </label>
-      <label>
-        <input type="radio" name="subGene" value="Game3"> Game 3 - Hide from the present that is growling.
-      </label>
-      <label>
-        <input type="radio" name="subGene" value="Game4"> Game 4 - Kick them all cause none have your name on them.
-      </label>
-      <label>
-        <input type="radio" name="subGene" value="Game5"> Game 5 - Climb to the highest point to get the best vantage point.
-      </label>
-    </form>
-  </div>
+    <!-- Third Section -->
+    <div class="box">
+      <h3>Later you find yourself in a room full of presents. What's your first move?</h3>
+      <form>
+        <label>
+          <input type="radio" name="subGene" value="Game1"> Game 1 - Run around looking for the perfect gift.
+        </label>
+        <label>
+          <input type="radio" name="subGene" value="Game2"> Game 2 - Jump in and open everything.
+        </label>
+        <label>
+          <input type="radio" name="subGene" value="Game3"> Game 3 - Hide from the present that is growling.
+        </label>
+        <label>
+          <input type="radio" name="subGene" value="Game4"> Game 4 - Kick them all cause none have your name on them.
+        </label>
+        <label>
+          <input type="radio" name="subGene" value="Game5"> Game 5 - Climb to the highest point to get the best vantage point.
+        </label>
+      </form>
+    </div>
 
-  <!-- Fourth Section -->
-  <div class="box">
-    <h3>The first present you open begins to tick, what do you do?</h3>
-    <form>
-      <label>
-        <input type="radio" name="tickPresent" value="Game1"> Game 1 - Run as far away as you can.
-      </label>
-      <label>
-        <input type="radio" name="tickPresent" value="Game2"> Game 2 - Close the door and wait.
-      </label>
-      <label>
-        <input type="radio" name="tickPresent" value="Game3"> Game 3 - Grab what you think are the best presents and run.
-      </label>
-      <label>
-        <input type="radio" name="tickPresent" value="Game4"> Game 4 - Try to disarm the present.
-      </label>
-      <label>
-        <input type="radio" name="tickPresent" value="Game5"> Game 5 - Hide behind your friends you invited.
-      </label>
-    </form>
-  </div>
+    <!-- Fourth Section -->
+    <div class="box">
+      <h3>The first present you open begins to tick, what do you do?</h3>
+      <form>
+        <label>
+          <input type="radio" name="tickPresent" value="Game1"> Game 1 - Run as far away as you can.
+        </label>
+        <label>
+          <input type="radio" name="tickPresent" value="Game2"> Game 2 - Close the door and wait.
+        </label>
+        <label>
+          <input type="radio" name="tickPresent" value="Game3"> Game 3 - Grab what you think are the best presents and run.
+        </label>
+        <label>
+          <input type="radio" name="tickPresent" value="Game4"> Game 4 - Try to disarm the present.
+        </label>
+        <label>
+          <input type="radio" name="tickPresent" value="Game5"> Game 5 - Hide behind your friends you invited.
+        </label>
+      </form>
+    </div>
 
-  <!-- Fifth Section -->
-  <div class="box">
-    <h3>Its a clock!, A dragon aproches! What do you do?</h3>
-    <form>
-      <label>
-        <input type="radio" name="dragonAction" value="Game1"> Game 1 - Pull out +5 the Broadsword you found in the other room.
-      </label>
-      <label>
-        <input type="radio" name="dragonAction" value="Game2"> Game 2 - Ask its name.
-      </label>
-      <label>
-        <input type="radio" name="dragonAction" value="Game3"> Game 3 - Challenge it to a duel.
-      </label>
-      <label>
-        <input type="radio" name="dragonAction" value="Game4"> Game 4 - Scream in terror and run away.
-      </label>
-      <label>
-        <input type="radio" name="dragonAction" value="Game5"> Game 5 - Cast magic missile into the darkness?
-      </label>
-    </form>
-  </div>
+    <!-- Fifth Section -->
+    <div class="box">
+      <h3>Its a clock!, A dragon aproches! What do you do?</h3>
+      <form>
+        <label>
+          <input type="radio" name="dragonAction" value="Game1"> Game 1 - Pull out +5 the Broadsword you found in the other room.
+        </label>
+        <label>
+          <input type="radio" name="dragonAction" value="Game2"> Game 2 - Ask its name.
+        </label>
+        <label>
+          <input type="radio" name="dragonAction" value="Game3"> Game 3 - Challenge it to a duel.
+        </label>
+        <label>
+          <input type="radio" name="dragonAction" value="Game4"> Game 4 - Scream in terror and run away.
+        </label>
+        <label>
+          <input type="radio" name="dragonAction" value="Game5"> Game 5 - Cast magic missile into the darkness?
+        </label>
+      </form>
+    </div>
+</div>
 
 </body>
 </html>
