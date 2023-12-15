@@ -174,6 +174,26 @@
       rusults = results + consoleChoice.value
 
 
+
+
+      if (
+      consoleChoice && consoleChoice.value === "Nintendo" &&
+      playerOptionsChoice && playerOptionsChoice.value === "Single" &&
+      roomCollapse && roomCollapse.value === "Game1" &&
+      tickPresentChoice && tickPresentChoice.value === "Game1" &&
+      dragonActionChoice && dragonActionChoice.value === "Game1"
+    ) {
+      gameName = "Tetris";
+      // If the conditions match, show details for Tetris
+      matchedGameHeader.innerHTML = '<h2>Your Awesome Games is:</h2>';
+      unmatchedGameHeader.innerHTML = ''; // Clear unmatched header
+    } else {
+      // If conditions do not match, show details for Zelda
+      gameName = "Zelda";
+      matchedGameHeader.innerHTML = ''; // Clear matched header
+      unmatchedGameHeader.innerHTML = '<h2>Since you couldn\'t decide what to choose, Here is the best game of all!</h2>';
+    } -->
+
       fetchGameDetails(gameName);
     }
 
