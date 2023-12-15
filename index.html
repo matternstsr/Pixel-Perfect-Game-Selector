@@ -151,7 +151,7 @@
       const showGameButton = document.querySelector('button:first-of-type');
       showGameButton.style.display = 'none';
 
-      let gameName;
+      let gameName = ['The Legend of Zelda: Tears of the Kingdom', 'Metroid Prime Remastered', 'Super Mario Odyssey', 'Pokemon Scarlet and Violet', 'The Legend of Zelda', 'Starfield', 'Resident Evil 4', 'Minecraft Legends', 'Star Wars Jedi: Survivor', 'Deathloop', 'Marvels Spider-Man', 'The Last of Us Part 2', 'Final Fantasy VII Remake', 'God of War', 'Fall Guys: Ultimate Knockout', 'Dead Space', 'Starfield', 'Control', 'Baldurs Gate 3', 'Valorant', 'Pocket Card Jockey', 'Resident Evil Village', 'Hello Kitty', 'Honkai: Star Rail', 'Souls'];
       let resultsDA = 0;
       let resultsTP = 0;
       let resultsRC = 0;
@@ -167,23 +167,52 @@
       const unmatchedGameHeader = document.getElementById('unmatchedGameHeader');
       const gameDetailsContainer = document.getElementById('gameDetails');
 
-      resultsDA = dragonActionChoice && dragonActionChoice.value;
-      resultsTP = tickPresentChoice && tickPresentChoice.value;
-      resultsRC = roomCollapse && roomCollapse.value;
+      if (dragonActionChoice && dragonActionChoice.value === 0)
+        numps = 0;
+      if (dragonActionChoice && dragonActionChoice.value === 1)
+        numps = 1;
+      if (dragonActionChoice && dragonActionChoice.value === 2)
+        numps = 2;
+      if (dragonActionChoice && dragonActionChoice.value === 3)
+        numps = 3;
+      if (dragonActionChoice && dragonActionChoice.value === 4)
+        numps = 4;      
+      if (tickingPresent && tickingPresent.value === 1)
+        resultsTP = 1;
+      if (tickingPresent && tickingPresent.value === 2)
+        resultsTP = 2;
+      if (tickingPresent && tickingPresent.value === 3)
+        resultsTP = 3;
+      if (dragonActionChoice && dragonActionChoice.value === 4)
+        resultsTP = 4;
+      if (roomCollapse && roomCollapse.value === 1)
+        resultsRC = 1;
+      if (roomCollapse && roomCollapse.value === 2)
+        resultsRC = 2;
+      if (roomCollapse && roomCollapse.value === 3)
+        resultsRC = 3;
+      if (roomCollapse && roomCollapse.value === 4)
+        resultsRC = 4;
       resltsCC = consoleChoice && consoleChoice.value;
+      if (consoleChoice && consoleChoice === 5)
+        resultsCC = 5;
+      if (consoleChoice && consoleChoice === 10)
+        resultsCC = 10;
+      if (consoleChoice && consoleChoice === 15)
+        resultsCC = 15;
+      if (consoleChoice && consoleChoice === 20)
+        resultsRC = 20;
 
-      if (numps > resultsTP(numps = numps--))
-      if (numps < resultsTP(numps = numps++))
-      if (numps > resultsRC(numps = numps--))
-      if (numps < resultsRC(numps = numps++))
-      if (numps > resultsRC(numps = numps--))
-      if (numps < resultsRC(numps = numps++))
-      if (numps > 4(numps = 4))
-      if (numps < 0(numps = 0))
-
-      gameName = numps,
+      if (numps > resultsTP)(numps = numps--)
+      if (numps < resultsTP)(numps = numps++)
+      if (numps > resultsRC)(numps = numps--)
+      if (numps < resultsRC)(numps = numps++)
+      if (numps > resultsRC)(numps = numps--)
+      if (numps < resultsRC)(numps = numps++)
+      if (numps > 4)(numps = 4)
+      if (numps < 0)(numps = 0)
       
-      fetchGameDetails(gameName);
+      fetchGameDetails('gameName[numps]');
     }
 
     function takeQuizAgain() {
