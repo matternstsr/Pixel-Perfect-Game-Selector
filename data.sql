@@ -1,5 +1,5 @@
 INSERT INTO example_table (id, name, age) VALUES
-  (1, 'Pocket Card Jockey: Ride On!', 'Mobile')
+  (1, 'Pocket Card Jockey', 'Mobile')
   (2, 'Resident Evil Village', 'Mobile')
   (3, 'Hello Kitty', 'Mobile'),
   (4, 'Honkai: Star Rail', 'Mobile'),
@@ -9,13 +9,13 @@ INSERT INTO example_table (id, name, age) VALUES
   (8, 'Control', 'PC')
   (9, 'Baldurs Gate 3', 'PC')
   (10, 'Valorant', 'PC')
-  (11, 'Spider-Man', 'Playstation')
+  (11, 'Marvels Spider-Man', 'Playstation')
   (12, 'The Last of Us Part 2', 'Playstation')
   (13, 'Final Fantasy VII Remake', 'Playstation')
   (14, 'God of War', 'Playstation')
   (15, 'Fall Guys: Ultimate Knockout', 'Playstation')
   (16, 'The Legend of Zelda: Tears of the Kingdom', 'Nintendo')
-  (17, 'Metroid Prime', 'Nintendo')
+  (17, 'Metroid Prime Remastered', 'Nintendo')
   (18, 'Super Mario Odyssey', 'Nintendo')
   (19, 'Pokemon Scarlet and Violet', 'Nintendo')
   (20, 'Mario + Rabbids Sparks of Hope', 'Nintendo')
