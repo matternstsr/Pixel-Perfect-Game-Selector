@@ -193,7 +193,6 @@
         resultsRC = 3;
       if (roomCollapse && roomCollapse.value === 4)
         resultsRC = 4;
-      resltsCC = consoleChoice && consoleChoice.value;
       if (consoleChoice && consoleChoice === 5)
         resultsCC = 5;
       if (consoleChoice && consoleChoice === 10)
@@ -201,7 +200,7 @@
       if (consoleChoice && consoleChoice === 15)
         resultsCC = 15;
       if (consoleChoice && consoleChoice === 20)
-        resultsRC = 20;
+        resultsCC = 20;
 
       if (numps > resultsTP)(numps = numps--)
       if (numps < resultsTP)(numps = numps++)
@@ -211,8 +210,8 @@
       if (numps < resultsRC)(numps = numps++)
       if (numps > 4)(numps = 4)
       if (numps < 0)(numps = 0)
-      
-      fetchGameDetails('gameName[numps]');
+      numps = numps + resultsCC
+      fetchGameDetails(gameName[5]);
     }
 
     function takeQuizAgain() {
