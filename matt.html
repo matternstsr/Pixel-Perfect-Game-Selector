@@ -152,7 +152,6 @@
       showGameButton.style.display = 'none';
 
       let gameName;
-      let results = dragonAction.value
       const consoleChoice = document.querySelector('input[name="console"]:checked');
       const playerOptionsChoice = document.querySelector('input[name="playerOptions"]:checked');
       const roomCollapse = document.querySelector('input[name="roomCollapse"]:checked');
@@ -161,20 +160,6 @@
       const matchedGameHeader = document.getElementById('matchedGameHeader');
       const unmatchedGameHeader = document.getElementById('unmatchedGameHeader');
       const gameDetailsContainer = document.getElementById('gameDetails');
-
-      
-      if (dragonAction > tickPresent(results = reuslts--))
-      if (dragonAction < tickPresent(results = reuslts++))
-      if (tickPresent > roomCollapse(results = reuslts--))
-      if (tickPresent < roomCollapse(results = reuslts++))
-      if (roomCollapse > madeIt(results = reuslts--))
-      if (roomCollapse < madeIt(results = reuslts++))
-      if (reuslts > 4(results = 4))
-      if (reuslts < 0(results = 0))
-      rusults = results + consoleChoice.value
-
-
-
 
       if (
       consoleChoice && consoleChoice.value === "Nintendo" &&
@@ -192,7 +177,7 @@
       gameName = "Zelda";
       matchedGameHeader.innerHTML = ''; // Clear matched header
       unmatchedGameHeader.innerHTML = '<h2>Since you couldn\'t decide what to choose, Here is the best game of all!</h2>';
-    } -->
+    }
 
       fetchGameDetails(gameName);
     }
@@ -225,10 +210,7 @@
             const game = data.results[0];
             const gameHtml = `
               <h2>${game.name}</h2>
-              <p>${game.description}</p>
-              <p>Released: ${game.released}</p>
               <img src="${game.background_image}" alt="${game.name}">
-
               <h3>Platforms:</h3>
               <ul>
                 ${game.platforms.map(platform => `
