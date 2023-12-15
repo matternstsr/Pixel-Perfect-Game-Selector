@@ -19,7 +19,7 @@ INSERT INTO Games (Title, Platform, Mode, Genre, SubGenre) VALUES
     ('Baldur''s Gate 3', 'PC', 'Multiplayer', 'Fantasy', 'Shooter'),
     ('Valorant', 'PC', 'Multiplayer', 'Action', 'Shooter'),
 
-    ('Marvel''s Spider-Man', 'Playstation', 'Single', 'Fantasy', 'Action'),
+    ('Marvels Spider-Man', 'Playstation', 'Single', 'Fantasy', 'Action'),
     ('The Last of Us Part 2', 'Playstation', 'Multiplayer', 'Action', 'Shooter'),
     ('Final Fantasy VII Remake', 'Playstation', 'Multiplayer', 'Fantasy', 'Action'),
     ('God of War', 'Playstation', 'Multiplayer', 'Action', 'Fantasy'),
@@ -29,7 +29,7 @@ INSERT INTO Games (Title, Platform, Mode, Genre, SubGenre) VALUES
     ('Metroid Prime Remastered', 'Nintendo', 'Multiplayer', 'Fantasy', 'Action'),
     ('Super Mario Odyssey', 'Nintendo', 'Multiplayer', 'Fantasy', 'Action'),
     ('Pokemon Scarlet and Violet', 'Nintendo', 'Multiplayer', 'Fantasy', 'Action'),
-    ('Mario + Rabbids Sparks of Hope', 'Nintendo', 'Single', 'Fantasy', 'Action'),
+    ('The Legend of Zelda', 'Nintendo', 'Single', 'Fantasy', 'RPG')
     
     ('Starfield', 'Xbox', 'Single', 'Action', 'RPG'),
     ('Resident Evil 4', 'Xbox', 'Single', 'Action', 'Shooter'),

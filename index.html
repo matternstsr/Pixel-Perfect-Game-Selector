@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pixel Perfect Pairing - Ultimate Game Matcher</title>
   <style>
+    head {
+      width: 50%;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    
     body {
       font-family: Arial, sans-serif;
       margin: 20px;
@@ -32,7 +37,28 @@
       max-width: 100%;
       word-wrap: break-word;
     }
+
+    .showGameButton {
+      margin-left: 25%;
+      margin-right: 25%;
+      width: 50%;
+      display: block;
+    }
+
+    .takeQuizAgain {
+      margin-left: 25%;
+      margin-right: 25%;
+      width: 50%;
+      display: none;
+    }
+
+    #matchedGameHeader, #unmatchedGameHeader, #gameDetails {
+      margin-left: 25%;
+      margin-right: 25%;
+      width: 50%;
+    }
   </style>
+  <title class='titleName'>Pixel Perfect Pairing - Ultimate Game Matcher</title>
 </head>
 <body>
   <h1>Pixel Perfect Pairing - The Ultimate Game Matcher</h1>
@@ -138,9 +164,9 @@
       </form>
     </div>
   </div>
-  <button onclick="showMyGame()" style="display: block;">Show My Game</button>
+  <button class='showGameButton' onclick="showMyGame()"><h3>Show My Game</h3></button>
     <!-- Add a new button for taking the quiz again -->
-  <button onclick="takeQuizAgain()" style="display: none;">Take Quiz Again</button>
+  <button class='takeQuizAgain' onclick="takeQuizAgain()"><h3>Take Quiz Again</h3></button>
   <div id="matchedGameHeader"></div>
   <div id="unmatchedGameHeader"></div>
   <div id="gameDetails"></div>
