@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Perfect Pairing - Ultimate Game Matcher</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-image: url('images/SnowBG.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .questions .box {
+      /* Set the left margin to 0 to move the boxes to the left */
+      margin-left: 25%;
+      margin-right: 25%;
+      
+      /* Optionally, you can set other properties to adjust the positioning */
+      /* For example, you might want to set padding or width */
+      padding: 10px;
+      width: 50%;
+  }
+  .box {
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent white background for better readability */
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block; /* or block, depending on your layout requirements */
+    max-width: 100%; /* ensures the box doesn't exceed the width of its container */
+    word-wrap: break-word; /* allows long words to break and wrap onto the next line */
+  }
+  </style>
+</head>
+<body>
+  <h1>Pixel Perfect Pairing - The Ultimate Game Matcher</h1>
+      <div class="questions">
+        <!-- First Section -->
+        <div class="box">
+      <h3>You wake up in the morning and it's snowing! What do you do first?</h3>
+      <form>
+        <label>
+          <input type="radio" name="console" value="Nintendo"> Call friends and family.
+        </label>
+        <label>
+          <input type="radio" name="console" value="Xbox"> Prepare to spend the day watching sports.
+        </label>
+        <label>
+          <input type="radio" name="console" value="PlayStation"> Bundle up on the couch, and find a good movie.
+        </label>
+        <label>
+          <input type="radio" name="console" value="Mobile"> Get dressed and sprint outside!
+        </label>
+        <label>
+          <input type="radio" name="console" value="PC"> Check the weather, and plan out my day accordingly.
+      </form>
+    </div>
+
+    <!-- Second Section -->
+    <div class="box">
+      <h3>After Breakfast, you are walking down the road and find yourself in a snowball fight! What's your move?</h3>
+      <form>
+        <label>
+          <input type="radio" name="playerOptions" value="Single"> Ignore it, you've got better things to do.
+        </label>
+        <label>
+          <input type="radio" name="playerOptions" value="Multiplayer"> Join in! It's everyone for themselves!
+        </label>
+      </form>
+    </div>
+
+    <!-- Third Section -->
+    <div class="box">
+      <h3>A dragon is guarding a hoard of presents! What do you do?</h3>
+      <form>
+        <label>
+          <input type="radio" name="dragonAction" value="Game1"> Pull out the +5 Broadsword you keep with you.
+        </label>
+        <label>
+          <input type="radio" name="dragonAction" value="Game2"> Ask it it's name.
+        </label>
+        <label>
+          <input type="radio" name="dragonAction" value="Game3"> Challenge it to a duel.
+        </label>
+        <label>
+          <input type="radio" name="dragonAction" value="Game4"> Cast magic missile into the darkness?
+        </label>
+        <label>
+          <input type="radio" name="dragonAction" value="Game5"> Scream in terror and run away!
+        </label>
+      </form>
+    </div>
+
+    <!-- Fourth Section -->
+    <div class="box">
+      <h3>You defeat the dragon, but the first present you open begins to tick, what do you do?</h3>
+      <form>
+        <label>
+          <input type="radio" name="tickPresent" value="Game1"> Run as far away as you can!
+        </label>
+        <label>
+          <input type="radio" name="tickPresent" value="Game2"> Close the door and wait.
+        </label>
+        <label>
+          <input type="radio" name="tickPresent" value="Game3"> Rip it open, I'm not scared!
+        <label>
+          <input type="radio" name="tickPresent" value="Game4"> Try to disarm the present.
+        </label>
+        <label>
+          <input type="radio" name="tickPresent" value="Game5"> Hide behind your friends you invited.
+        </label>
+      </form>
+    </div>
+
+    <!-- Fifth Section -->
+    <div class="box">
+      <h3>Its a clock!, The room is starting to collapse, what do you do?</h3>
+      <form>
+        <label>
+          <input type="radio" name="roomCollapse" value="Game1"> Grab as many Presents as you can before running.
+        </label>
+        <label>
+          <input type="radio" name="roomCollapse" value="Game2"> Look for a secret escape route.
+        </label>
+        <label>
+          <input type="radio" name="roomCollapse" value="Game3"> Take the most optimized route out to be the fastest.
+        </label>
+        <label>
+          <input type="radio" name="roomCollapse" value="Game4"> Take only the most expensive looking gift.
+        </label>
+        <label>
+          <input type="radio" name="roomCollapse" value="Game5"> Panic!
+        </label>
+      </form>
+    </div>
+
+    <!-- Sixth selection --> 
+    <div class="box">
+      <h3>You made it out! How would you rank your day?</h3>
+      <form>
+        <label>
+          <input type="radio" name="madeIt" value="Game1"> Amazing!
+        </label>
+        <label>
+          <input type="radio" name="madeIt" value="Game2"> The Best Ever!
+        </label>
+        <label>
+          <input type="radio" name="madeIt" value="Game3"> Unbeatable!
+        </label>
+        <label>
+          <input type="radio" name="madeIt" value="Game4"> Awesome!
+        </label>
+        <label>
+          <input type="radio" name="madeIt" value="Game5"> Incredible!
+        </label>
+      </form>
+    </div>
+  </div>
+  <button onclick="showMyGame()" style="display: block;">Show My Game</button>
+    <!-- Add a new button for taking the quiz again -->
+  <button onclick="takeQuizAgain()" style="display: none;">Take Quiz Again</button>
+  <div id="matchedGameHeader"></div>
+  <div id="unmatchedGameHeader"></div>
+  <div id="gameDetails"></div>
+  
+  <script>
+    const gameMappings = {
+      Nintendo: {
+        Single: {
+          Game1: "The Legend of Zelda: Tears of the Kingdom",
+          Game2: "Metroid Prime Remastered",
+          Game3: "Super Mario Odyssey",
+          Game4: "Pokemon Scarlet and Violet",
+          Game5: "Mario + Rabbids Sparks of Hope"
+        },
+        Multiplayer: {
+          Game1: "The Legend of Zelda: Tears of the Kingdom",
+          Game2: "Metroid Prime Remastered",
+          Game3: "Super Mario Odyssey",
+          Game4: "Pokemon Scarlet and Violet",
+          Game5: "Mario + Rabbids Sparks of Hope"
+        }
+        // Add more mappings for other scenarios within Nintendo
+      },
+      Xbox: {
+        Single: {
+          Game1: "Starfield",
+          Game2: "Resident Evil 4",
+          Game3: "Minecraft Legends",
+          Game4: "Star Wars Jedi: Survivor",
+          Game5: "Deathloop"
+        },
+        Multiplayer: {
+          Game1: "Starfield",
+          Game2: "Resident Evil 4",
+          Game3: "Minecraft Legends",
+          Game4: "Star Wars Jedi: Survivor",
+          Game5: "Deathloop"
+        }
+        // Add more mappings for other scenarios within Xbox
+      },
+      Playstation: {
+        Single: {
+          Game1: "Marvel's Spider-Man",
+          Game2: "The Last of Us Part 2",
+          Game3: "Final Fantasy VII Remake",
+          Game4: "God of War",
+          Game5: "Fall Guys: Ultimate Knockout"
+        },
+        Multiplayer: {
+          Game1: "Marvel's Spider-Man",
+          Game2: "The Last of Us Part 2",
+          Game3: "Final Fantasy VII Remake",
+          Game4: "God of War",
+          Game5: "Fall Guys: Ultimate Knockout"
+        }
+        // Add more mappings for other scenarios within Playstation
+      },
+      Mobile: {
+        Single: {
+          Game1: "Resident Evil Village",
+          Game2: "Dead Space",
+          Game3: "Hello Kitty",
+          Game4: "Honkai: Star Rail",
+          Game5: "Puzzmo"
+        },
+        Multiplayer: {
+          Game1: "Pocket Card Jockey",
+          Game2: "Hello Kitty",
+          Game3: "Honkai: Star Rail",
+          Game4: "Marvel's Spider-Man",
+          Game5: "Deathloop"
+        }
+        // Add more mappings for other scenarios within Mobile
+      },
+      PC: {
+        Single: {
+          Game1: "Dead Space",
+          Game2: "Starfield",
+          Game3: "Control",
+          Game4: "Baldur's Gate 3",
+          Game5: "Valorant"
+        },
+        Multiplayer: {
+          Game1: "Baldur's Gate 3",
+          Game2: "Valorant",
+          Game3: "Minecraft Legends",
+          Game4: "Star Wars Jedi: Survivor",
+          Game5: "Deathloop"
+        }
+        // Add more mappings for other scenarios within PC
+      }
+    };
+  
+    // Updated showMyGame function
+    function showMyGame() {
+      const consoleChoice = document.querySelector('input[name="console"]:checked');
+      const playerOptionsChoice = document.querySelector('input[name="playerOptions"]:checked');
+      const roomCollapse = document.querySelector('input[name="roomCollapse"]:checked');
+      const tickPresentChoice = document.querySelector('input[name="tickPresent"]:checked');
+      const dragonActionChoice = document.querySelector('input[name="dragonAction"]:checked');
+      const madeIt = document.querySelector('input[name="madeIt"]:checked');
+      const matchedGameHeader = document.getElementById('matchedGameHeader');
+      const unmatchedGameHeader = document.getElementById('unmatchedGameHeader');
+    
+      if (consoleChoice && playerOptionsChoice && roomCollapse && tickPresentChoice && dragonActionChoice && madeIt) {
+        // Check different scenarios and set gameName accordingly
+        let gameName;
+    
+        try {
+          // Log each property to identify which one is causing the issue
+          console.log(consoleChoice.value, playerOptionsChoice.value, roomCollapse.value, tickPresentChoice.value, dragonActionChoice.value, madeIt.value);
+    
+          // Attempt to access the nested properties, handle undefined values gracefully
+          gameName =
+            gameMappings[consoleChoice.value]?.[playerOptionsChoice.value]?.[roomCollapse.value]?.[tickPresentChoice.value]?.[dragonActionChoice.value]?.[madeIt.value] ||
+            "Donkey Kong";
+        } catch (error) {
+          console.error('Error accessing nested properties:', error);
+          gameName = "Donkey Kong";
+          matchedGameHeader.innerHTML = '';
+          unmatchedGameHeader.innerHTML = '<h2>An error occurred. Here is the best game of all!</h2>';
+        }
+    
+        matchedGameHeader.innerHTML = '<h2>Your Awesome Games is:</h2>';
+        unmatchedGameHeader.innerHTML = '';
+        fetchGameDetails(gameName);
+      }
+    }
+    
+    
+
+    function takeQuizAgain() {
+      // Show the .questions div
+      const questionsDiv = document.querySelector('.questions');
+      questionsDiv.style.display = 'block';
+    
+      // Show the "Show My Game" button
+      const showGameButton = document.querySelector('button:first-of-type');
+      showGameButton.style.display = 'block';
+    
+      // Hide the "Take Quiz Again" button
+      const takeQuizAgainButton = document.querySelector('button:last-of-type');
+      takeQuizAgainButton.style.display = 'none';
+    
+      // Clear any previous game details
+      document.getElementById('matchedGameHeader').innerHTML = '';
+      document.getElementById('unmatchedGameHeader').innerHTML = '';
+      document.getElementById('gameDetails').innerHTML = '';
+    }
+
+    function fetchGameDetails(gameName) {
+      // Fetch game details based on the provided gameName
+      fetch(`http://localhost:3000/api/games?search=${gameName}`)
+        .then(response => response.json())
+        .then(data => {
+          if (data.results && data.results.length > 0) {
+            const game = data.results[0];
+            const gameHtml = `
+              <h2>${game.name}</h2>
+              <p>${game.description}</p>
+              <p>Released: ${game.released}</p>
+              <img src="${game.background_image}" alt="${game.name}">
+
+              <h3>Platforms:</h3>
+              <ul>
+                ${game.platforms.map(platform => `
+                  <li>${platform.platform.name} (Released at: ${platform.released_at})</li>
+                  <ul>
+                    <li>Minimum Requirements: ${platform.requirements ? platform.requirements.minimum : 'Not available'}</li>
+                    <li>Recommended Requirements: ${platform.requirements ? platform.requirements.recommended : 'Not available'}</li>
+                  </ul>
+                `).join('')}
+              </ul>
+            `;
+            document.getElementById('gameDetails').innerHTML = gameHtml;
+          } else {
+            document.getElementById('gameDetails').innerHTML = '<p>No game found with that name.</p>';
+          }
+        })
+        .catch(error => {
+          console.error('Error fetching game details:', error);
+          document.getElementById('gameDetails').innerHTML = '<p>Error fetching game details. Please try again later.</p>';
+        });
+    }
+  </script>
+</body>
+</html>

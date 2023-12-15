@@ -1,26 +1,38 @@
-INSERT INTO example_table (id, name, age) VALUES
-  (1, 'Pocket Card Jockey', 'Mobile')
-  (2, 'Resident Evil Village', 'Mobile')
-  (3, 'Hello Kitty', 'Mobile'),
-  (4, 'Honkai: Star Rail', 'Mobile'),
-  (5, 'Puzzmo', 'Mobile')
-  (6, 'Dead Space', 'PC')
-  (7, 'Starfield', 'PC')
-  (8, 'Control', 'PC')
-  (9, 'Baldurs Gate 3', 'PC')
-  (10, 'Valorant', 'PC')
-  (11, 'Marvels Spider-Man', 'Playstation')
-  (12, 'The Last of Us Part 2', 'Playstation')
-  (13, 'Final Fantasy VII Remake', 'Playstation')
-  (14, 'God of War', 'Playstation')
-  (15, 'Fall Guys: Ultimate Knockout', 'Playstation')
-  (16, 'The Legend of Zelda: Tears of the Kingdom', 'Nintendo')
-  (17, 'Metroid Prime Remastered', 'Nintendo')
-  (18, 'Super Mario Odyssey', 'Nintendo')
-  (19, 'Pokemon Scarlet and Violet', 'Nintendo')
-  (20, 'Mario + Rabbids Sparks of Hope', 'Nintendo')
-  (21, 'Starfield', 'X-Box')
-  (22, 'Resident Evil 4', 'X-Box')
-  (23, 'Minecraft Legends', 'X-Box')
-  (24, 'Star Wars Jedi: Survivor', 'X-Box')
-  (25, 'Deathloop', 'X-Box');
+CREATE TABLE Games (
+    Title VARCHAR(255),
+    Platform VARCHAR(50),
+    Mode VARCHAR(20),
+    Genre VARCHAR(50),
+    SubGenre VARCHAR(50)
+);
+
+INSERT INTO Games (Title, Platform, Mode, Genre, SubGenre) VALUES
+    ('Pocket Card Jockey', 'Mobile', 'Multiplayer', 'Fantasy', 'Arcade'),
+    ('Resident Evil Village', 'Mobile', 'Single', 'Action', 'Shooter'),
+    ('Hello Kitty', 'Mobile', 'Multiplayer', 'Arcade', 'Fantasy'),
+    ('Honkai: Star Rail', 'Mobile', 'Single', 'Fantasy', 'Shooter'),
+    ('Puzzmo', 'Mobile', 'Single', 'Arcade', 'Fantasy'),
+
+    ('Dead Space', 'PC', 'Single', 'Action', 'Shooter'),
+    ('Starfield', 'PC', 'Single', 'Action', 'RPG'),
+    ('Control', 'PC', 'Single', 'Action', 'Fantasy'),
+    ('Baldur''s Gate 3', 'PC', 'Multiplayer', 'Fantasy', 'Shooter'),
+    ('Valorant', 'PC', 'Multiplayer', 'Action', 'Shooter'),
+
+    ('Marvel''s Spider-Man', 'Playstation', 'Single', 'Fantasy', 'Action'),
+    ('The Last of Us Part 2', 'Playstation', 'Multiplayer', 'Action', 'Shooter'),
+    ('Final Fantasy VII Remake', 'Playstation', 'Multiplayer', 'Fantasy', 'Action'),
+    ('God of War', 'Playstation', 'Multiplayer', 'Action', 'Fantasy'),
+    ('Fall Guys: Ultimate Knockout', 'Playstation', 'Multiplayer', 'Arcade', 'Fantasy'),
+
+    ('The Legend of Zelda: Tears of the Kingdom', 'Nintendo', 'Multiplayer', 'Fantasy', 'Action'),
+    ('Metroid Prime Remastered', 'Nintendo', 'Multiplayer', 'Fantasy', 'Action'),
+    ('Super Mario Odyssey', 'Nintendo', 'Multiplayer', 'Fantasy', 'Action'),
+    ('Pokemon Scarlet and Violet', 'Nintendo', 'Multiplayer', 'Fantasy', 'Action'),
+    ('Mario + Rabbids Sparks of Hope', 'Nintendo', 'Single', 'Fantasy', 'Action'),
+    
+    ('Starfield', 'Xbox', 'Single', 'Action', 'RPG'),
+    ('Resident Evil 4', 'Xbox', 'Single', 'Action', 'Shooter'),
+    ('Minecraft Legends', 'Xbox', 'Multiplayer', 'Fantasy', 'Action'),
+    ('Star Wars Jedi: Survivor', 'Xbox', 'Single', 'Fantasy', 'Shooter'),
+    ('Deathloop', 'Xbox', 'Multiplayer', 'Action', 'Shooter');
