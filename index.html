@@ -152,7 +152,12 @@
       showGameButton.style.display = 'none';
 
       let gameName;
-      let results = dragonAction.value
+      let resultsDA = 0;
+      let resultsTP = 0;
+      let resultsRC = 0;
+      let resltsCC = 0;
+      let numps = 0;
+
       const consoleChoice = document.querySelector('input[name="console"]:checked');
       const playerOptionsChoice = document.querySelector('input[name="playerOptions"]:checked');
       const roomCollapse = document.querySelector('input[name="roomCollapse"]:checked');
@@ -162,18 +167,22 @@
       const unmatchedGameHeader = document.getElementById('unmatchedGameHeader');
       const gameDetailsContainer = document.getElementById('gameDetails');
 
+      resultsDA = dragonActionChoice && dragonActionChoice.value;
+      resultsTP = tickPresentChoice && tickPresentChoice.value;
+      resultsRC = roomCollapse && roomCollapse.value;
+      resltsCC = consoleChoice && consoleChoice.value;
+
+      if (numps > resultsTP(numps = numps--))
+      if (numps < resultsTP(numps = numps++))
+      if (numps > resultsRC(numps = numps--))
+      if (numps < resultsRC(numps = numps++))
+      if (numps > resultsRC(numps = numps--))
+      if (numps < resultsRC(numps = numps++))
+      if (numps > 4(numps = 4))
+      if (numps < 0(numps = 0))
+
+      gameName = numps,
       
-      if (dragonAction > tickPresent(results = reuslts--))
-      if (dragonAction < tickPresent(results = reuslts++))
-      if (tickPresent > roomCollapse(results = reuslts--))
-      if (tickPresent < roomCollapse(results = reuslts++))
-      if (roomCollapse > madeIt(results = reuslts--))
-      if (roomCollapse < madeIt(results = reuslts++))
-      if (reuslts > 4(results = 4))
-      if (reuslts < 0(results = 0))
-      rusults = results + consoleChoice.value
-
-
       fetchGameDetails(gameName);
     }
 
