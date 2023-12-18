@@ -26,5 +26,5 @@
 
 #### Authors
 Travis Adamson
-Matt Earnst
+Matt Ernst
 Logan Savage
