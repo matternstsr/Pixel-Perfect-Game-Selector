@@ -151,13 +151,14 @@
       const showGameButton = document.querySelector('button:first-of-type');
       showGameButton.style.display = 'none';
 
-      let gameName = ['The Legend of Zelda: Tears of the Kingdom', 'Metroid Prime Remastered', 'Super Mario Odyssey', 'Pokemon Scarlet and Violet', 'The Legend of Zelda', 'Starfield', 'Resident Evil 4', 'Minecraft Legends', 'Star Wars Jedi: Survivor', 'Deathloop', 'Marvels Spider-Man', 'The Last of Us Part 2', 'Final Fantasy VII Remake', 'God of War', 'Fall Guys: Ultimate Knockout', 'Dead Space', 'Starfield', 'Control', 'Baldurs Gate 3', 'Valorant', 'Pocket Card Jockey', 'Resident Evil Village', 'Hello Kitty', 'Honkai: Star Rail', 'Souls'];
+      let gameName1 = ['The Legend of Zelda: Tears of the Kingdom', 'Metroid Prime Remastered', 'Super Mario Odyssey', 'Pokemon Scarlet and Violet', 'The Legend of Zelda', 'Red Dead Redemption 2', 'Fallout 4', 'Minecraft Legends', 'Halo Infinite', 'Cuphead', 'Marvels Spider-Man', 'Gotham Knights', 'Final Fantasy VII Remake', 'Dungeons & Dragons: Dark Alliance', 'The Medium', 'Candy Crush Saga', 'Monument Valley 2', 'Asphalt 9: Legends', '2Fuse', 'Altos Adventure', 'Red Dead Redemption 2', 'Hollow Knight', 'Mass Effect Legendary Edition', 'Hogwarts Legacy', 'Grand Theft Auto 5'];
+      let gameName2 = ['Nintendo Switch Sports', 'Super Smash Bros Ultimate', 'Mario Kart 8 Deluxe', 'Splatoon 3', 'Overcooked All You Can Eat', 'Rocket League', 'Apex Legends', 'Fortnite', 'Diablo 4', 'Destiny 2', 'Fortnite', 'Call of Duty Warzone', 'Street Fighter 6', 'No Mans Sky', 'FIFA 23', 'Souls', 'Marvels Strike Force', 'Pocket Card Jockey', 'Honkai Star Rail', 'Words with Friends 2', 'Diablo 4', 'Portal 2', 'Dead by Daytime', 'Valorant', 'World of Warcraft'];
       let resultsDA = 0;
       let resultsTP = 0;
       let resultsRC = 0;
       let resultsCC = 0;
       let numps = 0;
-
+      let gameName = gameName2;
       const consoleChoice = document.querySelector('input[name="console"]:checked');
       const playerOptionsChoice = document.querySelector('input[name="playerOptions"]:checked');
       const roomCollapse = document.querySelector('input[name="roomCollapse"]:checked');
@@ -193,7 +194,10 @@
       if (numps < 0)(numps = 0)
 
       numps = Number(numps) + Number(resultsCC);
-      
+      if (playerOptionsChoice.value === '1')
+        gameName = gameName1;
+      else
+        gameName = gameName2;
       fetchGameDetails(gameName[numps]);
     }
 
