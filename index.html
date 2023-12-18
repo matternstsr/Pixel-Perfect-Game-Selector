@@ -130,14 +130,35 @@
       </form>
     </div>
   </div>
-  <button class='showGameButton' onclick="showMyGame()"><h3>Show My Game</h3></button>
-    <!-- Add a new button for taking the quiz again -->
+  <button class='showGameButton' onclick="showMyGame()" style="display: none;"><h3>Show My Game</h3></button>
   <button class='takeQuizAgain' onclick="takeQuizAgain()"><h3>Take Quiz Again</h3></button>
   <div id="matchedGameHeader"></div>
   <div id="unmatchedGameHeader"></div>
   <div id="gameDetails"></div>
   
+ 
   <script>
+    // Function to check if all radio buttons are selected
+    function areAllRadioButtonsSelected() {
+      const radioGroups = document.querySelectorAll('.questions form');
+      return Array.from(radioGroups).every(form => {
+        const selectedRadioButton = form.querySelector('input[type="radio"]:checked');
+        return selectedRadioButton !== null;
+      });
+    }
+
+    // Function to update the visibility of the "Show My Game" button
+    function updateShowGameButtonVisibility() {
+      const showGameButton = document.querySelector('.showGameButton');
+      showGameButton.style.display = areAllRadioButtonsSelected() ? 'block' : 'none';
+    }
+
+    // Add event listeners to radio buttons to update the button visibility
+    const radioButtons = document.querySelectorAll('.questions input[type="radio"]');
+    radioButtons.forEach(radioButton => {
+      radioButton.addEventListener('change', updateShowGameButtonVisibility);
+    });
+
     function showMyGame() {
       // Hide the .questions div
       const questionsDiv = document.querySelector('.questions');
