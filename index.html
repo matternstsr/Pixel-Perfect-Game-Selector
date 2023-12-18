@@ -230,18 +230,8 @@
             const gameHtml = `
               <h2>${game.name}</h2>
               <img class='gameImage' src="${game.background_image}" alt="${game.name}">
-              <h3>Platforms:</h3>
-              <h4 id="gameName">${game.name}</h4> <!-- Displaying gameName here -->
-              <ul>
-                ${game.platforms.map(platform => `
-                  <li>${platform.platform.name} (Released at: ${platform.released_at})</li>
-                  <ul>
-                    <li>Minimum Requirements: ${platform.requirements ? platform.requirements.minimum : 'Not available'}</li>
-                    <li>Recommended Requirements: ${platform.requirements ? platform.requirements.recommended : 'Not available'}</li>
-                  </ul>
-                `).join('')}
-              </ul>
-            `;
+              <p>Released: ${game.released}</p>
+              `;
             document.getElementById('gameDetails').innerHTML = gameHtml;
           } else {
             document.getElementById('gameDetails').innerHTML = '<p>No game found with that name.</p>';
