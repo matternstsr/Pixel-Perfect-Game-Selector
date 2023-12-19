@@ -1,11 +1,6 @@
 import express from 'express';
 import fetch from 'node-fetch';
 import cors from 'cors'; // Import the cors middleware
-import path from 'path';
-import { fileURLToPath } from 'url'; 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const currentFilePath = fileURLToPath(import.meta.url); 
 
 const app = express();
 const port = 3000;
