@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/style.css"/>
+  <link rel="stylesheet" href='https://storage.googleapis.com/pixel-perfect-gift-selector/styles/style.css'/>
   <title>Pixel Perfect Pairing - Ultimate Game Matcher</title>
 </head>
 <body>
@@ -243,15 +243,15 @@
 
     function fetchGameDetails(gameName) {
       // Fetch game details based on the provided gameName
-      fetch(`http://localhost:3000/api/games?search=${gameName}`)
+      fetch(`http://34.125.55.83:3000/api/games?search=${gameName}`)
         .then(response => response.json())
         .then(data => {
           if (data.results && data.results.length > 0) {
             const game = data.results[0];
             const gameHtml = `
-              <h2>${game.name}</h2>
+              <h1 class='gameDetail'>${game.name}</h1>
               <img class='gameImage' src="${game.background_image}" alt="${game.name}">
-              <h2>Released: ${game.released}</h2>
+              <h1 class='gameDetail'>Released: ${game.released}</h1>
               `;
             document.getElementById('gameDetails').innerHTML = gameHtml;
           } else {

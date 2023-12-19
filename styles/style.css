@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-image: url('../images/SnowBG.jpg');
+    background-image: url('https://storage.googleapis.com/pixel-perfect-gift-selector/images/SnowBG.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 50%;
