@@ -19,6 +19,8 @@
 - See your result!
 - *Your reslts are based on calculated answers to pull the appropriate API data using a VM server.*
 
+![Pixel Perfect Game Selector](https://github.com/TravisAdamson/hackSprintT2/blob/a422bc23aa55f471dd545517067eddfcf48b756a/images/Preview.gif)
+
 ### Repo Files
 | **File** | *__Description__* |
 |----------|----------------:|
