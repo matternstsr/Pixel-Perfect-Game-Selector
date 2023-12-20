@@ -13,15 +13,19 @@
 - Group must make a 5 minute presentation on project.
 
 ### Instructions
-- Follow the link to the website : <insert_link>
-- Complete the quiz and click the "Show me my game!" button.
+- Follow the link to the website : http://storage.googleapis.com/pixel-perfect-gift-selector/index.html
+- The web page has to be http:// and not https:// (for most androids it will try to use secure protocol unfortunatly)
+- Complete the quiz and click the "Show My Game!" button.
 - See your result!
-
+- *Your reslts are based on calculated answers to pull the appropriate API data using a VM server.*
 
 ### Repo Files
 | **File** | *__Description__* |
 |----------|----------------:|
 |index.html| The HTML file for the base of the webpage.|
+|styles.css| The CSS file for the Style of the webpage.|
+|server.mjs| The Javascript file for the API of the webpage.|
+|SnowBG.jpg| The Image file for the background of the webpage.|
 ||
 
 #### Authors
