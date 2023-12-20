@@ -1,4 +1,4 @@
-#**Project** Hack Sprint T2
+# **Project** Hack Sprint T2
 
 ## Introduction
 > This README is for the Hack Sprint in T2 at Holberton.
