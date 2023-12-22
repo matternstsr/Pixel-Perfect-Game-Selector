@@ -13,25 +13,25 @@
 - Group must make a 5 minute presentation on project.
 
 ### Instructions
-- Follow the link to the website : http://storage.googleapis.com/pixel-perfect-gift-selector/index.html
-- The web page has to be http:// and not https:// (for most androids it will try to use secure protocol unfortunatly)
+- Follow the link to the website : http://storage.googleapis.com/pixel-perfect-gift-selector/index.html (limited time for API results)
+- The web page has to be http:// and not https:// (for most androids it will try to use secure protocol unfortunately)
 - Complete the quiz and click the "Show My Game!" button.
 - See your result!
-- *Your reslts are based on calculated answers to pull the appropriate API data using a VM server.*
+- *Your results are based on calculated answers to pull the appropriate API data using a VM server.*
 - To view the page locally clone the git hub repository and start the API server using (node server.mjs)
-> Makes sure that you have the Prerequits
+> Makes sure that you have the Prerequisites
 > Open one Ubuntu terminal and run the server (node server.mjs)
 > Open the index html using the browser of your choice.
 > Take the quiz and get you game match!  Retake if you choose too!
 
-
-NOTE: Local Viewing:
-Prerequits:
-> update - sudo apt update
-> Install Node JS - sudo apt install nodejs npm
-> Install Axios - npm install axios
-> Install Express - npm install express node-fetch cors
-> Install Cors (FLASK) - npm install cors
+### Local Viewing Requirements
+- NOTE: Local Viewing:
+- Prerequisites:
+- > update - sudo apt update
+- > Install Node JS - sudo apt install nodejs npm
+- > Install Axios - npm install axios
+- > Install Express - npm install express node-fetch cors
+- > Install Cors (FLASK) - npm install cors
 
 ![Pixel Perfect Game Selector](https://github.com/TravisAdamson/hackSprintT2/blob/a422bc23aa55f471dd545517067eddfcf48b756a/images/Preview.gif)
 
