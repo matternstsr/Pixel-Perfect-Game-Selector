@@ -43,7 +43,7 @@
 |server.mjs| The Javascript file for the API of the webpage.|
 |SnowBG.jpg| The Image file for the background of the webpage.|
 ||
-
+ 
 #### Authors
 Travis Adamson
 Matt Ernst
