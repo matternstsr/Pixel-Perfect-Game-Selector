@@ -24,6 +24,8 @@
 > Open the index html using the browser of your choice.
 > Take the quiz and get you game match!  Retake if you choose too!
 
+https://github.com/matternstsr/hackSprintT2/tree/main
+
 ### Local Viewing Requirements
 - NOTE: Local Viewing:
 - Prerequisites:
