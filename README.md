@@ -1,9 +1,20 @@
 # **Project** Hack Sprint T2
 
 ## Introduction
-> This README is for the Hack Sprint in T2 at Holberton.
-> We decided to create a web quiz for our project based on the theme of this year.
-> The web quiz is used to match you to a new game to try!
+This README is for the Hack Sprint in T2 at Holberton.
+We decided to create a web quiz for our project based on the theme of this year.
+The web quiz is used to match you to a new game to try!
+
+## About the Developer
+
+Hello! I'm [Matthew Ernst](https://matternst.com/), a passionate software developer with a love for creating interactive applications. You can also find me on [Twitter](https://x.com/MatthewErn46471)  or check out my work in my [Portfolio Project repository](https://github.com/matternstsr).
+
+## Overview
+The idea for our web quiz originated from our shared love for gaming and the desire to create something that resonates with fellow gamers. We wanted to capture the spirit of winter while making the experience fun and engaging. Collaborating with my team, we focused on creating a user-friendly interface that not only aligns with our theme but also provides a seamless experience.
+Challenges Faced
+
+## Project Story
+One of the biggest challenges was ensuring that our application functioned smoothly across different browsers and devices. We also had to navigate API integrations carefully to fetch game data based on user inputs without any hiccups. Despite these challenges, the thrill of seeing our project come together made the effort worthwhile!
 
 ### Requirements
 - Must match the theme.
@@ -56,6 +67,6 @@ https://github.com/matternstsr/hackSprintT2/tree/main
 ||
  
 #### Authors
-Travis Adamson
-Matt Ernst
-Logan Savage
+- Matthew Ernst - Matthew.Ernst@atlasschool.com
+- Travis Adamson - Travis.Adamson@atlasschool.com
+- Logan Savage - Logan.Savage@atlasschool.com
