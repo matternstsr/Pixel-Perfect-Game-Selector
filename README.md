@@ -1,7 +1,7 @@
-# **Project** Hack Sprint T2
+# **Pixel Perfect Game Selector** 
 
 ## Introduction
-This README is for the Hack Sprint in T2 at Holberton.
+This README is for the Hack Sprint in T2 at Atlas.
 We decided to create a web quiz for our project based on the theme of this year.
 The web quiz is used to match you to a new game to try!
 
