@@ -35,7 +35,16 @@ https://github.com/matternstsr/hackSprintT2/tree/main
 - > Install Express - npm install express node-fetch cors
 - > Install Cors (FLASK) - npm install cors
 
+- Preveiw:
 ![Pixel Perfect Game Selector](https://github.com/TravisAdamson/hackSprintT2/blob/a422bc23aa55f471dd545517067eddfcf48b756a/images/Preview.gif)
+- Start Screen:
+![Pixel Perfect Game Selector](https://github.com/matternstsr/hackSprintT2/blob/a050321f1e6f68cf0b791388f19793c2b4a6ae23/images/START.png)
+- Questions Screen:
+![Pixel Perfect Game Selector](https://github.com/matternstsr/hackSprintT2/blob/a050321f1e6f68cf0b791388f19793c2b4a6ae23/images/QUESTIONS1.png)
+- Submit Button:
+![Pixel Perfect Game Selector](https://github.com/matternstsr/hackSprintT2/blob/a050321f1e6f68cf0b791388f19793c2b4a6ae23/images/SHOWGAME.png)
+- Show Matched Game Screen:
+![Pixel Perfect Game Selector](https://github.com/matternstsr/hackSprintT2/blob/a050321f1e6f68cf0b791388f19793c2b4a6ae23/images/GAMESELECTED.png)
 
 ### Repo Files
 | **File** | *__Description__* |
